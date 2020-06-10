@@ -11,6 +11,6 @@ while True:
 	if num == r:
 		print('猜對了喔! ')
 		break
-	elif num != r:
+	else:
 		print('再猜一次喔!! 數字比',num, '還',ans, '!')
 

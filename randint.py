@@ -1,7 +1,9 @@
 import random
 
 r = random.randint(1, 10)
+count = 0
 while True:
+	count = count + 1
 	num = input('請猜一個數字(1~10): ')
 	num = int(num)
 	if  r - num < 0 :
@@ -12,5 +14,4 @@ while True:
 		print('猜對了喔! ')
 		break
 	else:
-		print('再猜一次喔!! 數字比',num, '還',ans, '!')
-
+		print('再猜一次喔!! 數字比',num, '還',ans, '!', '(已猜', count, '遍)')
